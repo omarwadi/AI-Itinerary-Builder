@@ -11,6 +11,7 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
 )
 
+
 import yaml
 
 with open("config.yaml", "r") as file:
