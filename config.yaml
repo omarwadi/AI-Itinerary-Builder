@@ -1,0 +1,11 @@
+email:
+  sender: "omaralwadi.56@gmail.com"
+  sender_password: "vcyuxzifdferpddh"
+
+streamlit:
+  title: "Roam Rover"
+  icon: "✈️"
+
+data:
+  Jordan: "Data/Jordan Dataset.csv"
+  UAE: "Data/UAE Dataset.csv"
