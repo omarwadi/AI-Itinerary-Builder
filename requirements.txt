@@ -1,8 +1,4 @@
 streamlit
 pandas
-email_validator
-typing
 langchain
-email_for_user 
-send_mail
 yaml
