@@ -2,4 +2,8 @@ pandas
 langchain
 streamlit
 openai
+<<<<<<< HEAD
 EmailMessage
+=======
+EmailMessage
+>>>>>>> fe059ce (updated req)
