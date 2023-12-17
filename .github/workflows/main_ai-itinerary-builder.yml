@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'ai-itinerary-builder'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_879C250C35474448A2EE52C12722FAEF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FB37BF0D717C4CD9973C9B3FA34197B4 }}
