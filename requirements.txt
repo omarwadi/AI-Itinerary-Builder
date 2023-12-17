@@ -1,4 +1,5 @@
 pandas 
 langchain
 streamlit
+openai
 EmailMessage
