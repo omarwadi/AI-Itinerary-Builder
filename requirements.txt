@@ -1,9 +1,4 @@
 streamlit
 pandas
-email_validator
-typing
 langchain
-validate_email
-email_validator
-asyncio
-EmailMessage
+
