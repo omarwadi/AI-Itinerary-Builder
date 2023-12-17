@@ -2,9 +2,9 @@ import streamlit as st
 from LLM import *
 import asyncio
 from email_for_user import send_mail
-from validate_email import check
 from langchain.memory import StreamlitChatMessageHistory
 import yaml
+import re
 
 with open("config.yaml", "r") as file:
     config_data = yaml.safe_load(file)
@@ -30,7 +30,12 @@ async def main():
 
     if user_prompt is not None:
         if "@" in user_prompt:
-            valid_email = await check(user_prompt)
+            users_email = re.findall(
+                r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", user_prompt
+            )
+
+            email = users_email[0]
+            valid_email = True
         st.session_state.messages.append({"role": "user", "content": user_prompt})
         with st.chat_message("user"):
             st.write(user_prompt)
@@ -47,12 +52,11 @@ async def main():
             with st.spinner("Please Wait"):
                 bot_response = await generate_chat(user_prompt, memory)
                 st.write(bot_response)
-                print("type of bot_response", type(bot_response))
             if valid_email:
-                user_email = user_prompt
                 if "Plan for" in bot_response or "email for" in bot_response:
                     user_plan = bot_response
-                    await send_mail(user_plan, user_email)
+                    await send_mail(user_plan, email)
+                    valid_email = False
         new_bot_response = {"role": "assistant", "content": bot_response}
         st.session_state.messages.append(new_bot_response)
 
