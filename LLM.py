@@ -41,7 +41,7 @@ AZ_LLM_PARAMS = {
     "openai_api_type": "azure",
     "openai_api_version": "2023-05-15",
     "openai_api_base": "https://pokemonGPT.openai.azure.com/",
-    "openai_api_key": "5d482a5723e742b69da51b233bee4240",
+    "openai_api_key": config_data["llm"]["api_key"],
 }
 
 

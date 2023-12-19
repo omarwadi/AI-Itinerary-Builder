@@ -17,7 +17,8 @@ async def main():
         page_icon=config_data["streamlit"]["icon"],
     )
     st.title("Roam Rover")
-    greetings = "Welcome! I'm Roam Rover, your virtual travel guide, Ready to plan your next adventure? Let's map out a fantastic itinerary with exciting places and activities for you!"
+    greetings = "Welcome! I'm Roam Rover, your virtual travel guide, Ready to plan your next adventure?\
+                Let's map out a fantastic itinerary with exciting places and activities for you!"
 
     if "messages" not in st.session_state.keys():
         st.session_state.messages = [{"role": "assistant", "content": greetings}]

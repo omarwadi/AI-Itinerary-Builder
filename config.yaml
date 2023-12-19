@@ -9,3 +9,6 @@ streamlit:
 data:
   Jordan: "Data/Jordan Dataset.csv"
   UAE: "Data/UAE Dataset.csv"
+
+llm:
+  api_key: "5d482a5723e742b69da51b233bee4240"
