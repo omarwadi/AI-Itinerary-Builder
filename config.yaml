@@ -1,6 +1,6 @@
 email:
-  sender: "omaralwadi.56@gmail.com"
-  sender_password: "vcyuxzifdferpddh"
+  sender: "ADD YOUR EMAIL HERE"
+  sender_password: "ADD YOUR PASSWORD HERE"
 
 streamlit:
   title: "Roam Rover"
@@ -11,4 +11,4 @@ data:
   UAE: "Data/UAE Dataset.csv"
 
 llm:
-  api_key: "5d482a5723e742b69da51b233bee4240"
+  api_key: "ADD YOUR API KEY HERE"
